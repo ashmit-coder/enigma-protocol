@@ -25,6 +25,9 @@ jobs:
       - name: Change to client directory
         run: cd client
         
+      - name: PWD
+        run: pwd
+        
       # ESLint and Prettier must be in `package.json`
       - name: Install Node.js dependencies
         run: npm ci
